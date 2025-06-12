@@ -190,9 +190,14 @@ export function Home({ ctx }: RequestInfo) {
             </h1>
           </div>
           {isAuthenticated && (
-            <a href="/user/logout" className="btn btn-secondary">
-              Sign Out
-            </a>
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+              <a href="/user/profile" className="btn btn-secondary">
+                Profile
+              </a>
+              <a href="/user/logout" className="btn btn-secondary">
+                Sign Out
+              </a>
+            </div>
           )}
         </div>
       </header>
